@@ -17,7 +17,8 @@ export default function Home() {
 				<link href="https://fonts.googleapis.com/css2?family=Aladin&family=Outfit&family=Roboto&display=swap" rel="stylesheet" />
       		</Head>
       		<main className=''>
-        
+
       		</main>
     	</>
-  	)}
+  	)
+}
