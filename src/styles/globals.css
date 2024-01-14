@@ -41,8 +41,14 @@
 	/* Gradient Colors for Elements */
 	--custom-aboutpage-gradient: linear-gradient(270deg, #763CAC 0.09%, #080027 43.66%, #763CAC 99.45%);
 	--custom-form-gradient: linear-gradient(180deg, #FFE873 0%, #FFF 100%);
+
+	/* Setting up Font Family for Different Elements */
+	--default-heading-family: 'Aladin', system-ui;
+	--default-sub-heading-family: 'Outfit', sans-serif;
+	--default-content-family: 'Roboto', sans-serif;
+	--default-text-family: 'Inter', sans-serif;
 }
 
 body {
-	font-family: 'Arial', sans-serif;
+	font-family: var(--default-text-family);
 }
