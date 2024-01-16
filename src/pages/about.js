@@ -26,9 +26,9 @@ export default function About() {
 
     return (
         <>
-            <div className='px-8 overflow-x-hidden'>
+            <div className='flex flex-column px-8 overflow-x-hidden'>
                 <NavBar onMenuClick={onElementClick} />
-                <div id="aboutContentContainer" className="flex">
+                <div id="aboutContentContainer" className="flex justify-content-center">
                     <div id="aboutContent" className="">
                         <h1 id="aboutMainHeadingText" className="">{aboutHeading} <strong id="aboutHeadingName" style={{ 'font-family': 'var(--default-heading-family)' }} className="">{aboutName}</strong></h1>
                         <div>
@@ -37,13 +37,13 @@ export default function About() {
                             <p>🌟 With a Master's Degree in Computer Science from the New Jersey Institute of Technology on the horizon, I'm excited to embark on the next chapter of my tech adventure. So, if you're seeking a dynamic collaborator, a coding addict, or just someone to geek out with about the latest tech trends, Let's connect.</p>
                         </div>
                     </div>
-                    <div id="aboutAvatarContainer" className="">
+                    <div id="aboutAvatarContainer" className="flex align-items-center">
                         <MyAvatar />
                     </div>
                 </div>
 
-                <div id="skillsImgContainer" className="">
-                    <Image />
+                <div id="skillsImgContainer" className="flex justify-content-center">
+                    <Image src={'path'} alt="all-skills-img" />
                 </div>
             </div>
         </>
