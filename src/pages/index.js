@@ -54,7 +54,7 @@ export default function Home() {
 						</ul>
 					</div>
 					<div id='heroButtonContainer' className=''>
-						<Button id='' label='About Me' className=''/>
+						<Button id='' label='Resume' className=''/>
 						<Button id='' label='Collaborate ?' className=''/>
 					</div>
 				</div>  	
