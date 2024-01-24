@@ -2,6 +2,7 @@ import NavBar from "@/components/NavBar";
 import { useRouter } from 'next/router';
 import { Image } from "primereact/image";
 import MyAvatar from "@/components/MyAvatar";
+import Footer from '@/components/Footer';
 
 export default function About() {
     const router = useRouter();
@@ -28,6 +29,7 @@ export default function About() {
         <>
             <div className='flex flex-column px-8 overflow-x-hidden'>
                 <NavBar onMenuClick={onElementClick} />
+                
                 <div id="aboutContentContainer" className="flex justify-content-center">
                     <div id="aboutContent" className="">
                         <h1 id="aboutMainHeadingText" className="">{aboutHeading} <strong id="aboutHeadingName" style={{ 'font-family': 'var(--default-heading-family)' }} className="">{aboutName}</strong></h1>
@@ -45,6 +47,8 @@ export default function About() {
                 <div id="skillsImgContainer" className="flex justify-content-center">
                     <Image src={'path'} alt="all-skills-img" />
                 </div>
+
+                <Footer />
             </div>
         </>
     )

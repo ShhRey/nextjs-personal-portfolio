@@ -2,6 +2,7 @@ import NavBar from "@/components/NavBar";
 import { useRouter } from "next/router";
 import { Button } from "primereact/button";
 import { Image } from "primereact/image";
+import Footer from '@/components/Footer';
 
 export default function Journey() {
     const educationCardHeader = "Education"
@@ -145,6 +146,7 @@ export default function Journey() {
                         </div>
                     </div>
                 </div>
+                <Footer />
             </div>
         </>
     )

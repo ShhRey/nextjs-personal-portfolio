@@ -3,6 +3,7 @@ import NavBar from '@/components/NavBar';
 import { useRouter } from 'next/router';
 import { Image } from 'primereact/image';
 import { Button } from 'primereact/button';
+import Footer from '@/components/Footer';
 
 export default function Home() {
 	const router = useRouter();
@@ -39,6 +40,7 @@ export default function Home() {
       		</Head>
       		<div id='main-page' className='px-8 overflow-x-hidden'>
 				<NavBar onMenuClick={onElementClick} />
+				
 				<div id='heroSectionContainer' className='flex flex-column align-items-center justify-content-center'>
 					<div id='heroSectionImage' className=''>
 						<Image alt='' src='' />
@@ -57,7 +59,9 @@ export default function Home() {
 						<Button id='' label='Resume' className=''/>
 						<Button id='' label='Collaborate ?' className=''/>
 					</div>
-				</div>  	
+				</div>
+				
+				<Footer />	
       		</div>
     	</>
   	)

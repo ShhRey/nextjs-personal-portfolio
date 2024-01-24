@@ -5,6 +5,7 @@ import { InputText } from "primereact/inputtext";
 import React, { useState } from "react";
 import { Image } from "primereact/image";
 import { Button } from "primereact/button";
+import Footer from '@/components/Footer';
 
 export default function Contact() {
     const connectHeader = "Want To Connect?"
@@ -31,6 +32,7 @@ export default function Contact() {
         <>
             <div className="px-8 overflow-x-hidden">
                 <NavBar onMenuClick={onElementClick} />
+                
                 <div id="connContainer" className="flex flex-column justify-content-center flex-wrap">
                     <h1 className="flex justify-content-center flex-wrap">{connectHeader}</h1>
                     <div id="connContent" className="flex justify-content-center flex-wrap gap-4 pt-3">
@@ -50,6 +52,8 @@ export default function Contact() {
                         </div>
                     </div>
                 </div>
+                
+                <Footer />
             </div>
         </>
     )
