@@ -55,9 +55,9 @@ export default function Home() {
 							<li>Quantitative Analysis</li>
 						</ul>
 					</div>
-					<div id='heroButtonContainer' className=''>
-						<Button id='' label='Resume' className=''/>
-						<Button id='' label='Collaborate ?' className=''/>
+					<div id='heroButtonContainer' className='flex gap-5'>
+						<a href='https://drive.google.com/file/d/10JUvRHN2hTEOaWjouiRqkVD4ScpgrGHx/view?usp=sharing' target="_blank" rel="noopener noreferrer"> <Button id='downResumeBtn' label='Resume' icon='pi pi-file-pdf' severity='resume' iconPos="right" size='large' style={{'font-size': '1.5rem'}}/> </a>
+						<a href='' target="_blank" rel="noopener noreferrer"> <Button id='collBtn' label='Collaborate?' icon='' severity='collaborate' iconPos="right" size='large' style={{'font-size': '1.5rem'}}/> </a>
 					</div>
 				</div>
 				

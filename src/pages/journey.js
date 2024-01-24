@@ -106,7 +106,7 @@ export default function Journey() {
                                     <li id="wsdHigh3" className="">some text</li>
                                     <li id="wsdHigh4" className="">some text</li>
                                 </ul>
-                                <Button id="wsdProjectCode" className="" label="View SourceCode" />
+                                <a href="https://github.com/ShhRey/SSN_IS601" target="_blank" rel="noopener noreferrer"> <Button id="wsdProjectCode" className="" label="View SourceCode" /> </a> 
                             </div>
                             <div id="WSDprojImage" className="">
                                 <Image src={"path"} alt="wsd-website-thumbnail" />
@@ -122,7 +122,7 @@ export default function Journey() {
                                     <li id="etHigh3" className="">some text</li>
                                     <li id="etHigh4" className="">some text</li>
                                 </ul>
-                                <Button id="etProjectCode" className="" label="View SourceCode" />
+                                <a href="https://github.com/ShhRey/TradingPlatform" target="_blank" rel="noopener noreferrer"> <Button id="etProjectCode" className="" label="View SourceCode" /> </a>
                             </div>
                             <div id="ETprojImage" className="">
                                 <Image src={"path"} alt="et-project-thumbnail" />
@@ -138,9 +138,9 @@ export default function Journey() {
                                     <li id="beHigh3" className="">some text</li>
                                     <li id="beHigh4" className="">some text</li>
                                 </ul>
-                                <Button id="beProjectCode" className="" label="View SourceCode" />
+                                <a href="https://github.com/ShhRey/FaceRecognition_FinalYear" target="_blank" rel="noopener noreferrer"> <Button id="beProjectCode" className="" label="View SourceCode" /> </a>
                             </div>
-                            <div id="WSDprojImage" className="">
+                            <div id="BEprojImage" className="">
                                 <Image src={"path"} alt="be-project-thumbnail" />
                             </div>
                         </div>
