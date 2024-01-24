@@ -1,12 +1,15 @@
 import NavBar from "@/components/NavBar";
 import { useRouter } from 'next/router';
 import { Divider } from "primereact/divider";
+import { InputText } from "primereact/inputtext";
+import React, { useState } from "react";
 import { Image } from "primereact/image";
+import { Button } from "primereact/button";
 
 export default function Contact() {
     const connectHeader = "Want To Connect?"
-    
     const router = useRouter();
+    const [value, setValue] = useState('');
 
     const onElementClick = (elementID) => {
 		switch(elementID) {
@@ -34,6 +37,12 @@ export default function Contact() {
                         <div id="connLeftSide" className="flex flex-column ">
                             <p>Need Help?</p>
                             <p>Email me at: shreytrivedi577@gmail.com</p>
+                            <div id="connForm" className="flex flex-column justify-content-center">
+                                <InputText value={value} onChange={(e) => setValue(e.target.value)} />
+                                <InputText value={value} onChange={(e) => setValue(e.target.value)} />
+                                <InputText value={value} onChange={(e) => setValue(e.target.value)} />
+                            </div>
+                            <Button id="subitQuery" className="mt-4" label="Submit" />
                         </div>
                         <Divider layout="vertical" />
                         <div id="connRightSide" className="">
