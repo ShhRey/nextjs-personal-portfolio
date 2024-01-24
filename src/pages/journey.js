@@ -1,5 +1,6 @@
 import NavBar from "@/components/NavBar";
 import { useRouter } from "next/router";
+import { Button } from "primereact/button";
 import { Image } from "primereact/image";
 
 export default function Journey() {
@@ -9,6 +10,8 @@ export default function Journey() {
 
     const workexCardHeader = "Work Experience"
     const workexpCompanyName = "Earnestroi Technology"
+    
+    const projectSectionHeader = "Projects"
 
     const router = useRouter();
 
@@ -31,7 +34,7 @@ export default function Journey() {
     return (
         <>
             <div className="px-8 overflow-x-hidden">
-                <NavBar />
+                <NavBar onMenuClick={onElementClick} />
                 <div id="journeyContentContainer" className="flex flex-column pt-5">
                     <div id="journeyCardsSection" className="flex justify-content-between flex-wrap">
                         <div id="educationCardContainer" className="flex flex-column">
@@ -87,6 +90,57 @@ export default function Journey() {
                                         <li id="" className="">task4</li>
                                     </ul>
                                 </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div id="projectCardsSection" className="flex flex-column pt-5">
+                        <h2 id="projectSectionHeading" className="flex justify-content-center">{projectSectionHeader}</h2>
+                        <div id="wsdProjectContainer" className="flex justify-content-around flex-wrap pt-5">
+                            <div id="wsdProjectContent" className="flex flex-column">
+                                <h3 id="wsdProjectHeading" className="">NextJS Branding Website</h3>
+                                <ul id="wsdProjectHighlights" className="">
+                                    <li id="wsdHigh1" className="">some text</li>
+                                    <li id="wsdHigh2" className="">some text</li>
+                                    <li id="wsdHigh3" className="">some text</li>
+                                    <li id="wsdHigh4" className="">some text</li>
+                                </ul>
+                                <Button id="wsdProjectCode" className="" label="View SourceCode" />
+                            </div>
+                            <div id="WSDprojImage" className="">
+                                <Image src={"path"} alt="wsd-website-thumbnail" />
+                            </div>
+                        </div>
+
+                        <div id="etProjectContainer" className="flex flex-row-reverse justify-content-around flex-wrap pt-5">
+                            <div id="etProjectContent" className="flex flex-column">
+                                <h3 id="etProjectHeading" className="">Custom Trading Platform</h3>
+                                <ul id="etProjectHighlights" className="">
+                                    <li id="etHigh1" className="">some text</li>
+                                    <li id="etHigh2" className="">some text</li>
+                                    <li id="etHigh3" className="">some text</li>
+                                    <li id="etHigh4" className="">some text</li>
+                                </ul>
+                                <Button id="etProjectCode" className="" label="View SourceCode" />
+                            </div>
+                            <div id="ETprojImage" className="">
+                                <Image src={"path"} alt="et-project-thumbnail" />
+                            </div>
+                        </div>
+
+                        <div id="beProjectContainer" className="flex justify-content-around flex-wrap pt-5">
+                            <div id="beProjectContent" className="flex flex-column">
+                                <h3 id="beProjectHeading" className="">Facial Recognition based Attendance Management System</h3>
+                                <ul id="beProjectHighlights" className="">
+                                    <li id="beHigh1" className="">some text</li>
+                                    <li id="beHigh2" className="">some text</li>
+                                    <li id="beHigh3" className="">some text</li>
+                                    <li id="beHigh4" className="">some text</li>
+                                </ul>
+                                <Button id="beProjectCode" className="" label="View SourceCode" />
+                            </div>
+                            <div id="WSDprojImage" className="">
+                                <Image src={"path"} alt="be-project-thumbnail" />
                             </div>
                         </div>
                     </div>
