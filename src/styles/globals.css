@@ -18,6 +18,7 @@
 
 	/* Gradient Colors for Elements */
 	--custom-aboutpage-gradient: linear-gradient(270deg, #763CAC 0.09%, #080027 43.66%, #763CAC 99.45%);
+	--custom-avatar-gradient: radial-gradient(50% 50% at 50% 50%, #763CAC 0%, rgba(50, 15, 133, 0.00) 100%);	
 	--custom-form-gradient: linear-gradient(180deg, #FFE873 0%, #FFF 100%);
 
 	/* Setting up Font Family for Different Elements */

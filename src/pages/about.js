@@ -30,8 +30,8 @@ export default function About() {
             <div className='flex flex-column px-8 overflow-x-hidden'>
                 <NavBar onMenuClick={onElementClick} />
                 
-                <div id="aboutContentContainer" className="flex justify-content-center">
-                    <div id="aboutContent" className="">
+                <div id="aboutContentContainer" className="flex justify-content-center mt-5 bg-cover bg-center opacity-90 gap-8" style={{"background-image": "url(/about-background.png)"}}>
+                    <div id="aboutContent" className="w-7">
                         <h1 id="aboutMainHeadingText" className="">{aboutHeading} <strong id="aboutHeadingName" style={{ 'font-family': 'var(--default-heading-family)' }} className="">{aboutName}</strong></h1>
                         <div>
                             <p>🚀 My development journey started at Mumbai University(India), from where I completed my Bachelor’s Degree in Information Technology. 🎓</p>
@@ -39,13 +39,13 @@ export default function About() {
                             <p>🌟 With a Master's Degree in Computer Science from the New Jersey Institute of Technology on the horizon, I'm excited to embark on the next chapter of my tech adventure. So, if you're seeking a dynamic collaborator, a coding addict, or just someone to geek out with about the latest tech trends, Let's connect.</p>
                         </div>
                     </div>
-                    <div id="aboutAvatarContainer" className="flex align-items-center">
+                    <div id="aboutAvatarContainer" className="flex align-items-center flex-wrap">
                         <MyAvatar />
                     </div>
                 </div>
 
-                <div id="skillsImgContainer" className="flex justify-content-center">
-                    <Image src={'path'} alt="all-skills-img" />
+                <div id="skillsImgContainer" className="flex justify-content-center pt-8">
+                    <Image src='/skills-background.png' alt="all-skills-img" />
                 </div>
 
                 <Footer />
