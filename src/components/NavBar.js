@@ -33,7 +33,7 @@ export default function NavBar({ onMenuClick }) {
 
     return (
         <div id='navContainer' className=''>
-            <Menubar className='flex justify-content-between flex-wrap' model={headings} start={avatar} />
+            <Menubar className='flex justify-content-between flex-wrap pt-6' model={headings} start={avatar} />
         </div>
     )
 }
