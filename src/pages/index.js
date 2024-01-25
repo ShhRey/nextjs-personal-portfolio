@@ -43,7 +43,7 @@ export default function Home() {
 				
 				<div id='heroSectionContainer' className='flex flex-column align-items-center justify-content-center'>
 					<div id='heroSectionImage' className=''>
-						<Image alt='' src='' />
+						<Image src='/hero-background.png' alt='landing-background-img' width={400} height={300} />
 					</div>
 					<div id='heroSectionContent' className=''>
 						<h1 id='heroMainHeadingText' style={{ 'color': 'var(--primary-text-color)', 'font-family': 'var(--default-heading-family)', 'text-shadow': 'var(--hero-text-shadow)' }} className='text-center text-7xl capitalize mb-0'>{heroMainHeading}</h1>
@@ -55,9 +55,9 @@ export default function Home() {
 							<li>Quantitative Analysis</li>
 						</ul>
 					</div>
-					<div id='heroButtonContainer' className='flex gap-5'>
-						<a href='https://drive.google.com/file/d/10JUvRHN2hTEOaWjouiRqkVD4ScpgrGHx/view?usp=sharing' target="_blank" rel="noopener noreferrer"> <Button id='downResumeBtn' label='Resume' icon='pi pi-file-pdf' severity='resume' iconPos="right" size='large' style={{'font-size': '1.5rem'}}/> </a>
-						<a href='' target="_blank" rel="noopener noreferrer"> <Button id='collBtn' label='Collaborate?' icon='' severity='collaborate' iconPos="right" size='large' style={{'font-size': '1.5rem'}}/> </a>
+					<div id='heroButtonContainer' className='flex flex-wrap gap-5'>
+						<a href='https://drive.google.com/file/d/10JUvRHN2hTEOaWjouiRqkVD4ScpgrGHx/view?usp=sharing' target="_blank" rel="noopener noreferrer"> <Button id='downResumeBtn' label='Resume' icon='pi pi-file-pdf' severity='resume' iconPos="right" size='large' style={{'font-size': '1.5rem', 'background-color': 'var(--primary-btn-color)', 'border-radius': '20%'}}/> </a>
+						<a href='' target="_blank" rel="noopener noreferrer"> <Button id='collBtn' label='Collaborate?' icon='' severity='collaborate' iconPos="right" size='large' style={{'font-size': '1.5rem', 'background-color': 'var(--primary-btn-color)', 'border-radius': '20%'}}/> </a>
 					</div>
 				</div>
 				
