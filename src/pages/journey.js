@@ -109,7 +109,7 @@ export default function Journey() {
                                 <a href="https://github.com/ShhRey/SSN_IS601" target="_blank" rel="noopener noreferrer"> <Button id="wsdProjectCode" className="" label="View SourceCode" /> </a> 
                             </div>
                             <div id="WSDprojImage" className="">
-                                <Image src={"path"} alt="wsd-website-thumbnail" />
+                                <Image src="/proj_odd.png" alt="wsd-website-thumbnail" />
                             </div>
                         </div>
 
@@ -125,7 +125,7 @@ export default function Journey() {
                                 <a href="https://github.com/ShhRey/TradingPlatform" target="_blank" rel="noopener noreferrer"> <Button id="etProjectCode" className="" label="View SourceCode" /> </a>
                             </div>
                             <div id="ETprojImage" className="">
-                                <Image src={"path"} alt="et-project-thumbnail" />
+                                <Image src="/proj_even.png" alt="et-project-thumbnail" />
                             </div>
                         </div>
 
@@ -141,7 +141,7 @@ export default function Journey() {
                                 <a href="https://github.com/ShhRey/FaceRecognition_FinalYear" target="_blank" rel="noopener noreferrer"> <Button id="beProjectCode" className="" label="View SourceCode" /> </a>
                             </div>
                             <div id="BEprojImage" className="">
-                                <Image src={"path"} alt="be-project-thumbnail" />
+                                <Image src="/proj_odd.png" alt="be-project-thumbnail" />
                             </div>
                         </div>
                     </div>
