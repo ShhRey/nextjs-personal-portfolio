@@ -6,19 +6,21 @@
 	/* Setting Effects for Different Elements */
 	--primary-text-color: #763CAC;
 	--secondary-text-color: #0BCEAF;
-	--primary-btn-color: #FFE873;
+	--primary-btn-color: #763CAC;
+	--secondary-btn-color: #FFE873;
 	--default-primary-color: #FFF;
 	--default-secondary-color: #000;
 	
 	--primary-resume-btn-color: #251C31;
 	--secondary-resume-btn-color: #0BCEAF;
 	--resume-btn-shadow: 5px 5px 3px 0px #000;
-	--hero-text-shadow: 1px 2px 10px #FFF;
+	--hero-text-shadow: 2px 4px 12px #FFF;
 	--hero-btn-shadow: 0px 2px 10px 0px #FFF;
 
 	/* Gradient Colors for Elements */
 	--custom-aboutpage-gradient: linear-gradient(270deg, #763CAC 0.09%, #080027 43.66%, #763CAC 99.45%);
 	--custom-avatar-gradient: radial-gradient(50% 50% at 50% 50%, #763CAC 0%, rgba(50, 15, 133, 0.00) 100%);	
+	--custom-journey-gradient: radial-gradient(44.38% 44.38% at 50% 50%, rgba(210, 166, 255, 0.50) 0%, rgba(50, 15, 133, 0.00) 100%);
 	--custom-form-gradient: linear-gradient(180deg, #FFE873 0%, #FFF 100%);
 
 	/* Setting up Font Family for Different Elements */

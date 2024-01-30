@@ -4,6 +4,7 @@ import { useRouter } from 'next/router';
 import { Image } from 'primereact/image';
 import { Button } from 'primereact/button';
 import Footer from '@/components/Footer';
+import styles from '@/styles/home.module.css';
 
 export default function Home() {
 	const router = useRouter();
@@ -41,23 +42,23 @@ export default function Home() {
       		<div id='main-page' className='px-8 overflow-x-hidden'>
 				<NavBar onMenuClick={onElementClick} />
 				
-				<div id='heroSectionContainer' className='flex flex-column align-items-center justify-content-center'>
-					<div id='heroSectionImage' className=''>
-						<Image src='/hero-background.png' alt='landing-background-img' width={400} height={300} />
+				<div id='heroSectionContainer' className='flex flex-wrap mt-6 px-8'>
+					<div id='heroSectionImage' className='m-0 w-5'>
+						<Image src='/hero-background.png' alt='landing-background-img' className={`${styles.heroImg}`} />
 					</div>
-					<div id='heroSectionContent' className=''>
-						<h1 id='heroMainHeadingText' style={{ 'color': 'var(--primary-text-color)', 'font-family': 'var(--default-heading-family)', 'text-shadow': 'var(--hero-text-shadow)' }} className='text-center text-7xl capitalize mb-0'>{heroMainHeading}</h1>
-						<p id='heroSubHeadingText' style={{'font-family': 'var(--default-sub-heading-family)'}} className='text-center text-2xl font-semibold'>A tech enthusiast, who thrives on turning ingenious ideas into enchanting digital innovations with a penchant for:</p>
-						<ul id='heroBulletPoints' className=''>
-							<li>Full Stack Development</li>
-							<li>Data Analysis & Visualization</li>
-							<li>Blockchain Technology</li>
-							<li>Quantitative Analysis</li>
+					<div id='heroSectionContent' className='flex flex-wrap flex-column justify-content-center m-0 w-7'>
+						<h1 id='heroMainHeadingText' className={`${'text-center text-8xl font-medium capitalize m-0'} ${styles.heroMainHeadingText}`}>{heroMainHeading}</h1>
+						<p id='heroSubHeadingText' className={`${'text-center text-2xl font-normal m-5'} ${styles.heroSubHeadingText}`}>A tech enthusiast, who thrives on turning ingenious ideas into enchanting digital innovations with a penchant for:</p>
+						<ul id='heroBulletPoints' className={`${'mt-0 px-8'} ${styles.heroBulletPoints}`}>
+							<li className={`text-xl`}>Full Stack Development</li>
+							<li className={`text-xl`}>Data Analysis & Visualization</li>
+							<li className={`text-xl`}>Blockchain Technology</li>
+							<li className={`text-xl`}>Quantitative Analysis</li>
 						</ul>
-					</div>
-					<div id='heroButtonContainer' className='flex flex-wrap gap-5'>
-						<a href='https://drive.google.com/file/d/10JUvRHN2hTEOaWjouiRqkVD4ScpgrGHx/view?usp=sharing' target="_blank" rel="noopener noreferrer"> <Button id='downResumeBtn' label='Resume' icon='pi pi-file-pdf' severity='resume' iconPos="right" size='large' style={{'font-size': '1.5rem', 'background-color': 'var(--primary-btn-color)', 'border-radius': '20%'}}/> </a>
-						<a href='' target="_blank" rel="noopener noreferrer"> <Button id='collBtn' label='Collaborate?' icon='' severity='collaborate' iconPos="right" size='large' style={{'font-size': '1.5rem', 'background-color': 'var(--primary-btn-color)', 'border-radius': '20%'}}/> </a>
+						<div id='heroButtonContainer' className='flex flex-wrap justify-content-center mt-3 gap-7'>
+							<a href='https://drive.google.com/file/d/10JUvRHN2hTEOaWjouiRqkVD4ScpgrGHx/view?usp=sharing' target="_blank" rel="noopener noreferrer"> <Button className={`${'text-2xl uppercase border-round-2xl p-2'} ${styles.heroButton}`} id='downResumeBtn' label='Resume' icon='pi pi-file-pdf' severity='resume' iconPos="right"/> </a>
+							<a href='' target="_blank" rel="noopener noreferrer"> <Button className={`${'text-2xl uppercase border-round-2xl p-2'} ${styles.heroButton}`} id='collBtn' label='Collaborate' icon='' severity='collaborate' iconPos="right"/> </a>
+						</div>
 					</div>
 				</div>
 				
