@@ -37,14 +37,14 @@ export default function Contact() {
                     <h1 className="flex justify-content-center flex-wrap">{connectHeader}</h1>
                     <div id="connContent" className="flex justify-content-center flex-wrap gap-4 pt-3">
                         <div id="connLeftSide" className="flex flex-column ">
-                            <p>Need Help?</p>
-                            <p>Email me at: shreytrivedi577@gmail.com</p>
+                            <p>Need Help? <br />
+                            Email me at: shreytrivedi577@gmail.com</p>
                             <div id="connForm" className="flex flex-column justify-content-center">
                                 <InputText value={value} onChange={(e) => setValue(e.target.value)} />
                                 <InputText value={value} onChange={(e) => setValue(e.target.value)} />
                                 <InputText value={value} onChange={(e) => setValue(e.target.value)} />
                             </div>
-                            <Button id="subitQuery" className="mt-4" label="Submit" />
+                            <Button id="submitQuery" className="mt-4" label="Submit" />
                         </div>
                         <Divider layout="vertical" />
                         <div id="connRightSide" className="">
