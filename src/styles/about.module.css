@@ -1,0 +1,18 @@
+.aboutContentContainer {
+    background-image: url(/about-background.png);
+}
+
+.aboutMainHeadingText {
+    font-family: var(--default-heading-family);
+}
+
+.aboutHeadingName {
+    color: var(--primary-text-color);
+    text-shadow: var(--hero-text-shadow);
+    -webkit-text-stroke-color: #000;
+    -webkit-text-stroke-width: 2px;
+}
+
+.aboutContent {
+    font-family: var(--default-sub-heading-family);
+}
